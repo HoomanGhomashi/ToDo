@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoDep</title>
+    <!-- لینک فایل CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- لینک کتابخانه Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Aboute</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <div class="container">
+            <div class="navbar2">
+                <nav>
+                    <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Aboute</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="control_titrs">
+                <div class="text_titre">
+                    <h1>Welcome Houman</h1>
+                    <h1>Task haye emroz</h1>
+                </div>
+                
+                <!-- اضافه کردن خط و متن جدید -->
+                <div class="line"></div>
+                <div class="content">
+                    <h1>مدیریت تسک‌ها</h1>
+                    <h3>امروز چه کاری باید انجام بدی؟</h3>
+                    <ul class="task-list">
+                        <li><span>شنبه، ۲ دی:</span> مطالعه کتاب</li>
+                        <li><span>یکشنبه، ۳ دی:</span> خرید مواد غذایی</li>
+                        <li><span>دوشنبه، ۴ دی:</span> تمرین ورزش</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <hr class="custom-line">
+                </div>
+                <div class="chart-container">
+                    <h2>Expense Chart</h2>
+                    <div class="chart-box">
+                        <canvas id="expenseChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="signin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <a href="login.html">بازدید از سایت</a>
+
+</body>
+
+</html>

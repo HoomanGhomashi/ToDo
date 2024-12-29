@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #9f8989;
+}
+
+.container {
+    display: flex;
+    /* آیتم‌ها به صورت افقی کنار هم قرار می‌گیرند */
+    align-items: flex-start;
+    /* آیتم‌ها در بالا تراز می‌شوند */
+}
+
+.container .control_titrs {
+    display: block;
+}
+
+.control_titrs .text_titre {
+    display: flex;
+
+}
+
+.container .custom-line {
+    margin-top: 1px;
+}
+
+.chart-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه اطراف کادر */
+    padding: 20px;
+    text-align: center;
+}
+
+.chart-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.chart-box {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    /* استفاده از Flexbox برای چیدمان افقی */
+    justify-content: center;
+    /* مرکز‌چین کردن آیتم‌ها */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+    /* فاصله بین آیتم‌ها */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    /* حذف خط زیر لینک‌ها */
+    font-size: 18px;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    /* تغییر رنگ پس‌زمینه هنگام هاور */
+    border-radius: 4px;
+    /* گوشه‌های گرد */
+}
+
+.navbar2 {
+    width: fit-content;
+    /* عرض به اندازه محتوای داخلی */
+    height: 100vh;
+    /* ارتفاع به اندازه محتوای داخلی */
+    font-size: 15px;
+    display: flex;
+    border-radius: 2px;
+    background-color: #333;
+    /* رنگ پس‌زمینه */
+    justify-content: center;
+    /* آیتم‌ها به سمت راست */
+    padding: 10px 15px;
+    /* فاصله داخلی برای زیبایی */
+
+}
+
+.navbar2 ul {
+    list-style: none;
+    display: block;
+    /* استفاده از Flexbox برای چیدمان افقی */
+    justify-content: center;
+    /* مرکز‌چین کردن آیتم‌ها */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar2 a {
+    color: white;
+    text-decoration: none;
+    /* حذف خط زیر لینک‌ها */
+    font-size: 18px;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.navbar2 a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.navbar2 li {
+    margin-top: 25px;
+}
+
+.container h1 {
+    margin-left: 20px;
+}
