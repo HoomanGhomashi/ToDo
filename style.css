@@ -102,10 +102,14 @@ body {
 .Tasks_Items .Task_Jour {
     font-size: 20px;
     border: #000000;
-    border-radius: 22px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 220 224px 281px rgba(243, 7, 7, 0.1);
     /* سایه برای باکس */
     border: 2px solid #b7b2b2;
+    background-color: #f0f0f0;
+    /* رنگ پس‌زمینه */
+    border-radius: 22px;
+
+
 }
 
 .Tasks_Items .Task_Jour .T4_jour {
@@ -115,6 +119,10 @@ body {
 
 .Tasks_Items .Task_Jour .T6_jour {
     margin-left: 10px;
+}
+
+.Other_Task {
+    margin-left: 20px;
 }
 
 
@@ -154,7 +162,22 @@ body {
     border-radius: 4px;
     /* گوشه‌های گرد */
 }
+.navbar nav ul li.sign-in-sign-up {
+    margin-left:  auto; /* قرار دادن این آیتم در انتهای صف */
+}
+.navbar nav ul li {
+    margin-right: 20px; /* فاصله بین آیتم‌ها */
+}
 
+.navbar nav ul {
+    margin-left: 120PX;
+    display: flex;
+    justify-content: center; /* قرار دادن آیتم‌ها در وسط */
+    list-style-type: none;
+     
+    padding: 0;
+    align-items: center; /* تراز کردن عمودی آیتم‌ها */
+}
 /* استایل برای navbar دومی */
 .navbar2 {
     width: fit-content;
