@@ -1,11 +1,14 @@
+/* استایل‌های عمومی صفحه */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #9f8989;
+    background-color: #868383;
+    /* رنگ پس‌زمینه برای کل صفحه */
 }
 
+/* استایل برای container */
 .container {
     display: flex;
     /* آیتم‌ها به صورت افقی کنار هم قرار می‌گیرند */
@@ -13,45 +16,86 @@ body {
     /* آیتم‌ها در بالا تراز می‌شوند */
 }
 
+/* استایل برای عنوان داخل container */
+.container h1 {
+    margin-left: 20px;
+}
+
+/* استایل برای بخش کنترل */
 .container .control_titrs {
     display: block;
 }
 
+/* استایل برای text_titre */
 .control_titrs .text_titre {
-    display: flex;
-
+    display: block;
 }
 
+/* خط جداکننده */
 .container .custom-line {
     margin-top: 1px;
+    display: block;
+    width: 500px;
 }
 
-.chart-container {
-    width: 80%;
-    max-width: 600px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه اطراف کادر */
-    padding: 20px;
-    text-align: center;
-}
-
-.chart-container h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-.chart-box {
+/* استایل برای دو بخش tasks و chart */
+.deux_secteur {
     width: 100%;
-    height: 300px;
+    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
+    margin: 20px;
+}
+
+.deux_secteur .border_chart {
+
+    width: 50%;
+    height: max-content;
+    display: block;
+    /* border-radius: 10px; */
+    /* گوشه‌های گرد */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* سایه برای باکس */
+    border-right: 2px solid #000000;
+    text-align: center;
+
+}
+
+.border_chart .chart-box {
+    width: 80%;
+    /* margin-left: 50px; */
+}
+
+.deux_secteur .border_tasks {
+    width: 50%;
+    height: max-content;
+    display: block;
+    border-radius: 10px;
+    justify-content: center;
+    justify-content: center;
+    /* مرکزچین کردن افقی */
+    align-items: flex-start;
+    /* تنظیم عمودی */
+
+
+}
+
+.deux_secteur .border_tasks .Titre_Tasks {
+    font-family: 'Courier New', Courier, monospace;
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    /* گوشه‌های گرد */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* سایه برای باکس */
+    border: 2px solid #b7b2b2;
+    margin: auto auto;
 }
 
 
+
+
+/* استایل برای navbar بالایی */
 .navbar {
     background-color: #333;
     padding: 10px 0;
@@ -88,6 +132,7 @@ body {
     /* گوشه‌های گرد */
 }
 
+/* استایل برای navbar دومی */
 .navbar2 {
     width: fit-content;
     /* عرض به اندازه محتوای داخلی */
@@ -102,7 +147,6 @@ body {
     /* آیتم‌ها به سمت راست */
     padding: 10px 15px;
     /* فاصله داخلی برای زیبایی */
-
 }
 
 .navbar2 ul {
@@ -113,6 +157,10 @@ body {
     /* مرکز‌چین کردن آیتم‌ها */
     margin: 0;
     padding: 0;
+}
+
+.navbar2 li {
+    margin-top: 25px;
 }
 
 .navbar2 a {
@@ -127,12 +175,4 @@ body {
 .navbar2 a:hover {
     background-color: #575757;
     border-radius: 4px;
-}
-
-.navbar2 li {
-    margin-top: 25px;
-}
-
-.container h1 {
-    margin-left: 20px;
 }
