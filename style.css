@@ -77,8 +77,8 @@ body {
     align-items: flex-start;
     /* تنظیم عمودی */
 
-
 }
+
 
 .deux_secteur .border_tasks .Titre_Tasks {
     font-family: 'Courier New', Courier, monospace;
@@ -92,7 +92,30 @@ body {
     margin: auto auto;
 }
 
+.Tasks_Items {
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: left;
+    text-align: left;
+    margin: 5px;
+}
 
+.Tasks_Items .Task_Jour {
+    font-size: 20px;
+    border: #000000;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* سایه برای باکس */
+    border: 2px solid #b7b2b2;
+}
+
+.Tasks_Items .Task_Jour .T4_jour {
+    margin-left: 10px;
+}
+
+
+.Tasks_Items .Task_Jour .T6_jour {
+    margin-left: 10px;
+}
 
 
 /* استایل برای navbar بالایی */
